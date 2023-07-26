@@ -58,23 +58,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   getScores();
 
-  function createScoreFromInputs() {
+  const createScoreFromInputs = () => {
     const inputName = document.getElementById('name-input').value;
     const inputValue = document.getElementById('value-input').value;
     createScore(inputName, inputValue);
-  }
+  };
 
-  function handleKeyPress(e) {
+  const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
       createScoreFromInputs();
     }
-  }
+  };
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     createScoreFromInputs();
-  }
+  };
 
   form.addEventListener('keydown', handleKeyPress);
   form.addEventListener('submit', handleSubmit);
