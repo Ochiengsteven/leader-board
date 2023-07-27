@@ -9,7 +9,7 @@ export default function renderPage() {
   scoresList.classList.add('scores-list');
   scoresList.innerHTML = `<div class="title">
                             <h3>Recent scores</h3>
-                            <button class="refresh-scores" id="page-refresh">Refresh</button>
+                            <button class="action" id="page-refresh">Refresh</button>
                           </div>
                           <div class="scores" id="score-table">
                           </div>`;
@@ -21,7 +21,7 @@ export default function renderPage() {
                         <form class="form">
                           <input type="text" placeholder="Your name" class="name" id="name-input" required>
                           <input type="number" placeholder="Your score" class="score" id="value-input" required>
-                          <div class="submit-btn"><button type="submit" class="submit">Submit</button></div>
+                          <div class="submit-btn"><button type="submit" class="action">Submit</button></div>
                         </form>`;
   scoreBoard.appendChild(addScore);
   appBody.appendChild(scoreBoard);
