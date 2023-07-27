@@ -25,7 +25,7 @@ body {
   background-image: linear-gradient(to top, #000, #300b63);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
