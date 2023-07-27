@@ -18,7 +18,7 @@
   margin: 0;
   padding: 2%;
   box-sizing: border-box;
-  color: white; 
+  color: white;
 }
 
 body {
@@ -202,11 +202,10 @@ button.action:hover::before {
 
 button.action:active {
   background: #261885;
-  transform: translate(0em, 0.75em);
+  transform: translate(0, 0.75em);
 }
 
 button.action:active::before {
   box-shadow: 0 0 0 2px #1f1369, 0 0 #0b0535;
   transform: translate3d(0, 0, -1em);
 }
-
