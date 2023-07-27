@@ -1,13 +1,23 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 2%;
   box-sizing: border-box;
+  color: white; /* Set text color to white for all elements */
+}
+
+body {
+  background-image: linear-gradient(to top, #000, #300b63); /* Gradient background from dark (#300b63) to top (black) */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 h1 {
-  color: black;
+  color: white; /* Set text color to white for h1 elements */
 }
 
+/* Score Board Styles */
 .score-board {
   display: flex;
   justify-content: space-between;
@@ -16,30 +26,33 @@ h1 {
   width: 100%;
 }
 
+/* Table Styles */
 .table {
   border-collapse: collapse;
   height: 30%;
   width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 20px;
 }
 
 .even {
-  background-color: lightgrey;
+  background-color: #18191b;
 }
 
 .odd {
-  background-color: white;
+  background-color: #242526;
 }
 
 .table td {
-  border: 2px solid black;
-  padding: 5px;
-  width: 60%;
+  padding: 6px;
+  width: 100%;
+  height: 35px;
 }
 
+/* Scores List Styles */
 .scores-list {
   width: 35%;
-
-  /* padding-top: 5px; */
 }
 
 .title {
@@ -47,7 +60,7 @@ h1 {
   display: flex;
 }
 
-/* input styles */
+/* Input Styles */
 .add-score {
   width: 40%;
 }
@@ -58,18 +71,37 @@ form {
   flex-direction: column;
 }
 
-.title button {
+input {
+  background-color: #242526;
+  border-radius: 20px; /* Curved border radius */
+  padding: 5px;
+  gap: 12px;
+  border: none;
+  height: 40px;
+  margin-bottom: 10px;
+  color: white; /* Set text color to white for input elements */
+}
+
+.add-score input:active {
+  border-color: #6b54fa; /* Neon blue glowing border when input is active */
+}
+
+/* Button Styles */
+button {
+  height: 40px;
   margin-left: 10px;
   width: 40%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-width: 2px 5px 6px 2px;
+  background-color: #1f1369; /* Button color (#6b54fa) */
+  border: none;
+  border-radius: 20px; /* Curved border radius */
+  box-shadow: 0 0 10px 2px #6b54fa; /* Glowing box-shadow effect */
   cursor: pointer;
 }
 
-input {
-  margin: 2%;
-  border-width: 1px;
-  border-radius: 3px;
+button:hover {
+  transform: scale(1.1); /* Scale button size on hover */
+  background-color: #0b0535; /* Button color (#6b54fa) */
+  box-shadow: 0 0 10px 2px #6b54fa; /* Glowing box-shadow effect */
 }
 
 .submit-btn {
@@ -78,7 +110,9 @@ input {
 }
 
 .submit {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  border-width: 2px 5px 6px 2px;
+  background-color: #10074d; /* Button color (#6b54fa) */
+  border: none;
+  border-radius: 20px; /* Curved border radius */
+  box-shadow: 0 0 10px 2px #6b54fa; /* Glowing box-shadow effect */
   cursor: pointer;
 }
